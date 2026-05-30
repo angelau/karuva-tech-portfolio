@@ -828,6 +828,72 @@ section {
 }
 
 
+.cta-buttons-group {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 30px;
+    flex-wrap: wrap;
+}
+
+.cta-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 30px;
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    min-width: 240px; 
+}
+
+.btn-icon {
+    margin-right: 10px;
+    font-size: 1.1rem;
+}
+
+
+.whatsapp-btn {
+    background: #25d366;
+    color: #fff;
+    border: 1px solid #25d366;
+}
+
+.whatsapp-btn:hover {
+    background: #20ba5a;
+    border-color: #20ba5a;
+    transform: translateY(-2px);
+}
+
+
+.calendly-btn {
+    background: transparent;
+    color: #fff;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.calendly-btn:hover {
+    background: rgba(255, 255, 255, 0.05);
+    border-color: var(--primary, #d4af37);
+    color: var(--primary, #d4af37);
+    transform: translateY(-2px);
+}
+
+
+@media (max-width: 600px) {
+    .cta-buttons-group {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+    .cta-btn {
+        width: 100%;
+    }
+}
+
+
 .main-footer {
     background: #0a0f1a; 
     padding: 4rem 0 2rem 0;
