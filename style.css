@@ -515,6 +515,70 @@ section {
 }
 
 
+
+
+.case-card {
+    background: rgba(255, 255, 255, 0.01);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: 16px;
+    padding: 40px;
+    text-align: left;
+    display: grid;
+    grid-template-columns: 1fr 1.2fr; 
+    gap: 40px;
+    align-items: center;
+    transition: border-color 0.3s ease;
+}
+
+.case-card:hover {
+    border-color: rgba(212, 175, 55, 0.3);
+}
+
+
+.case-image-side {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    padding: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.03);
+}
+
+.case-screenshot {
+    width: 100%;
+    height: auto;
+    max-height: 350px;
+    object-fit: cover;
+    border-radius: 6px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    opacity: 0.85;
+    transition: opacity 0.3s ease;
+}
+
+.case-card:hover .case-screenshot {
+    opacity: 1;
+}
+
+.case-content-side {
+    display: flex;
+    flex-direction: column;
+}
+
+
+@media (max-width: 992px) {
+    .case-card {
+        grid-template-columns: 1fr; 
+        padding: 30px;
+        gap: 30px;
+    }
+    
+    .case-image-side {
+        max-height: 250px;
+    }
+}
 .container-proof {
     padding: 80px 20px 40px 20px;
     max-width: 1200px;
