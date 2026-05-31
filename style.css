@@ -825,7 +825,7 @@ section {
 @media (max-width: 1024px) {
     .pricing-grid {
         grid-template-columns: 1fr;
-        max-width: 450px; /* Stacks vertically perfectly on tablets and mobile phones */
+        max-width: 450px; 
     }
 }
 
@@ -1098,5 +1098,51 @@ section {
         width: 100%;
         padding: 15px;
         font-size: 1.1rem;
+    }
+}
+
+
+.split-card {
+    display: grid;
+    grid-template-columns: 0.8fr 1.2fr; 
+    gap: 40px;
+    align-items: start;
+}
+
+.case-visual-wrapper {
+    width: 100%;
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    padding: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.04);
+    position: sticky;
+    top: 40px; 
+}
+
+.case-ui-screenshot {
+    width: 100%;
+    height: auto;
+    border-radius: 6px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    display: block;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+    transition: transform 0.3s ease;
+}
+
+.case-card-v2:hover .case-ui-screenshot {
+    transform: scale(1.02); 
+}
+
+
+@media (max-width: 1024px) {
+    .split-card {
+        grid-template-columns: 1fr; 
+        gap: 30px;
+    }
+    
+    .case-visual-wrapper {
+        position: static;
+        max-width: 500px;
+        margin: 0 auto;
     }
 }
