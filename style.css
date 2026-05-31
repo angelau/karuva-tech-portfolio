@@ -154,17 +154,72 @@ nav a { color: var(--dark); }
     padding: 0 2rem;
 }
 
-nav {
+
+.navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1.5rem 2rem;
-    position: sticky;
+    padding: 20px 40px;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(10px); 
+    position: fixed;
     top: 0;
-    background: #f59f0b97;
-    -webkit-backdrop-filter: blur(10px); 
-     backdrop-filter: blur(10px);
-    z-index: 100;
+    width: 100%;
+    z-index: 1000;
+    box-sizing: border-box;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo-link {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+
+.brand-logo-img {
+    height: 32px; 
+    object-fit: contain;
+    display: block;
+}
+
+
+.brand-logo-text {
+    font-size: 1.3rem;
+    font-weight: 800;
+    letter-spacing: 4px; 
+    color: #ffffff;
+    text-transform: uppercase;
+    font-family: system-ui, -apple-system, sans-serif;
+    transition: opacity 0.3s ease;
+}
+
+.brand-logo-text:hover {
+    opacity: 0.85;
+}
+
+.accent-dot {
+    color: var(--primary, #d4af37); 
+}
+
+
+body {
+    padding-top: 80px;
+}
+
+
+@media (max-width: 768px) {
+    .navbar {
+        padding: 15px 20px;
+    }
+    .brand-logo-text {
+        font-size: 1.1rem;
+        letter-spacing: 2px;
+    }
 }
 
 nav ul { display: flex; list-style: none; gap: 2rem; }
