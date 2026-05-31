@@ -182,9 +182,14 @@ nav a { color: var(--dark); }
 
 
 .brand-logo-img {
-    height: 32px; 
+    height: 40px; 
+    width: auto; 
     object-fit: contain;
     display: block;
+    
+
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: crisp-edges;
 }
 
 
