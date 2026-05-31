@@ -101,11 +101,11 @@ a, button {
     transition: all 0.2s ease;
 }
 
-nav {
+/* nav {
     background: rgba(17, 24, 39, 0.9); 
     border-bottom: 1px solid rgba(255,255,255, 0.1);
-}
-nav a { color: var(--dark); }
+} */
+.navbar a { color: var(--dark); }
 
 /* --- RESPONSIVENESS UPDATE --- */
 @media (max-width: 900px) {
@@ -167,6 +167,7 @@ nav a { color: var(--dark); }
     width: 100%;
     z-index: 1000;
     box-sizing: border-box;
+    border-bottom: 1px solid rgba(255,255,255, 0.1);
 }
 
 .logo-container {
@@ -181,22 +182,11 @@ nav a { color: var(--dark); }
 }
 
 
-.brand-logo-img {
-    height: 40px; 
-    width: auto; 
-    object-fit: contain;
-    display: block;
-    
-
-    image-rendering: -webkit-optimize-contrast;
-    image-rendering: crisp-edges;
-}
-
 
 .brand-logo-text {
-    font-size: 1.3rem;
+    font-size: 1.25rem;
     font-weight: 800;
-    letter-spacing: 4px; 
+    letter-spacing: 3px; 
     color: #ffffff;
     text-transform: uppercase;
     font-family: system-ui, -apple-system, sans-serif;
@@ -206,6 +196,7 @@ nav a { color: var(--dark); }
 .brand-logo-text:hover {
     opacity: 0.85;
 }
+
 
 .accent-dot {
     color: var(--primary, #d4af37); 
