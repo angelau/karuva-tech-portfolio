@@ -4,422 +4,508 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Karuva Tech - High-performance web development and workflow automation by Hachikaru Peace.">
+    
+    <!-- Open Graph Metadata for Social Sharing -->
     <meta property="og:title" content="Karuva Tech | Web Developer Portfolio">
-    <meta property="og:image" content="hachikaru.jpg">
+    <meta property="og:description" content="High-performance web development and workflow automation by Hachikaru Peace based in Port Harcourt.">
+    <meta property="og:image" content="images/hachikaru.jpg">
+    <meta property="og:type" content="website">
+
     <title>Hachikaru Peace | Web Developer</title>
     
     <link rel="preload" as="image" href="images/hachikaru.jpg">
 
-
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Fira+Code&display=swap" rel="stylesheet">
+    <!-- Premium Typography: Syncing Road 9 Aesthetic Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class="road9-theme">
    
-<nav class="navbar">
-    <div class="logo-container">
-        <a href="#" class="logo-link">
-            
-           
-            <span class="brand-logo-text">KARUVA TECH<span class="accent-dot">.</span></span>
-        </a>
-    </div>
-    
-    
-    <ul class="nav-links">
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#services">Pricing</a></li>
-        <li><a href="#contact">Contact</a></li>
-    </ul>
-</nav>
+    <!-- Progress Scroll Line -->
+    <div id="scroll-progress"></div>
 
-    <header class="hero">
-    <div class="container hero-split">
-      
-        <div class="hero-text">
-            <p class="intro-text">Hi, my name is</p>
-            <h1>Hachikaru Peace.</h1>
-            <h2>I help businesses and organizations get websites that actually win them clients.</h2>
-            <p class="description">
-                I’m a Web Developer and Digital creator with 3 years of experience 
-                focusing on custom builds and workflow automation.
-                <br>From local businesses to mission-driven organizations — clean, fast websites built to convert visitors into customers.
-            </p>
-            <a href="#projects" class="btn">View My Work</a>
+    <!-- Premium Navigation -->
+    <nav class="navbar">
+        <div class="logo-container">
+            <a href="#" class="logo-link">
+                <span class="brand-logo-text">KARUVA TECH<span class="accent-dot">.</span></span>
+            </a>
         </div>
-
-        
-        <div class="hero-image-wrapper">
-           
-            <img src="images/hachikaru.jpg" alt="Hachikaru Peace" class="hero-image">
-            <div class="image-accent"></div>
+        <!-- Toggle Trigger for Mobile Devices -->
+        <div class="menu-toggle" id="mobile-menu-trigger">
+            <span></span>
+            <span></span>
         </div>
-    </div>
-</header>
+        <ul class="nav-links" id="nav-links-container">
+            <li><a href="#projects" class="nav-item">Projects</a></li>
+            <li><a href="#pricing" class="nav-item">Pricing</a></li>
+            <li><a href="#contact" class="nav-item-btn">Get In Touch</a></li>
+        </ul>
+    </nav>
 
-<section id="skills" class="container2">
-    <h3 class="section-title">Technical Stack</h3>
-    <div class="skills-grid">
-        <!-- Web Development -->
-        <div class="skill-category">
-            <h4>Web Development</h4>
-            <ul>
-                <li>HTML5 / CSS3</li>
-                <li>JavaScript (ES6+)</li>
-                <li>Tailwind CSS</li>
-                <li>Responsive Design</li>
-            </ul>
+    <!-- Hero Section -->
+    <header class="hero grid-bg">
+        <div class="container hero-split reveal">
+            <div class="hero-text">
+                <div class="kicker"><span class="kicker-dot"></span> Available for Projects</div>
+                <h1 class="display-title">Hachikaru Peace<span class="title-dot">.</span></h1>
+                <h2 class="sub-display-title">I help businesses and organizations get websites that actually win them clients.</h2>
+                <p class="description">
+                    I’m a Web Developer and Digital creator with 3 years of experience focusing on custom builds and workflow automation.
+                    <br>From local businesses to mission-driven organizations — clean, fast websites built to convert visitors into customers.
+                </p>
+                <div class="hero-action-row">
+                    <a href="#projects" class="btn btn-primary">View My Work →</a>
+                    <a href="#contact" class="btn btn-secondary">Let's Talk</a>
+                </div>
+            </div>
+
+            <div class="hero-image-wrapper">
+                <div class="image-inner-frame">
+                    <img src="images/hachikaru.jpg" alt="Hachikaru Peace" class="hero-image">
+                </div>
+                <div class="floating-badge">
+                    <span class="badge-num">3+</span>
+                    <span class="badge-txt">Years Exp</span>
+                </div>
+            </div>
         </div>
-        
-        <!-- Tools & Workflow -->
-        <div class="skill-category">
-            <h4>Tools & Workflow</h4>
-            <ul>
-                <li>Git / GitHub</li>
-                <li>VS Code</li>
-                <li>Workflow Automation</li>
-                <li>Web Performance</li>
-            </ul>
-        </div>
+    </header>
 
-        <!-- Design & Others -->
-        <div class="skill-category">
-            <h4>Design & Other</h4>
-            <ul>
-                <li>UI Design Concepts</li>
-                <li>Asset Optimization</li>
-                <li>Backend Concepts</li>
-                <li>Deployment</li>
-            </ul>
-        </div>
-    </div>
-</section>
+    <!-- Technical Stack Section -->
+    <section id="skills" class="section-padding">
+        <div class="container reveal">
+            <div class="section-header-row">
+                <span class="section-tag">// Capabilities</span>
+                <h3 class="section-title">Technical Stack</h3>
+            </div>
+            <div class="skills-grid">
+                <!-- Web Development -->
+                <div class="skill-category">
+                    <div class="skill-cat-header">
+                        <span class="cat-num">01</span>
+                        <h4>Web Development</h4>
+                    </div>
+                    <ul>
+                        <li>HTML5 / CSS3</li>
+                        <li>JavaScript (ES6+)</li>
+                        <li>Tailwind CSS</li>
+                        <li>Responsive Design</li>
+                    </ul>
+                </div>
+                
+                <!-- Tools & Workflow -->
+                <div class="skill-category">
+                    <div class="skill-cat-header">
+                        <span class="cat-num">02</span>
+                        <h4>Tools & Workflow</h4>
+                    </div>
+                    <ul>
+                        <li>Git / GitHub</li>
+                        <li>VS Code</li>
+                        <li>Workflow Automation</li>
+                        <li>Web Performance</li>
+                    </ul>
+                </div>
 
-
-
-<section id="about" class="container3">
-    <div class="about-frame vibe-fade">
-        <h3 class="section-title">The Journey</h3>
-        <div class="about-content">
-            <p>
-                With a background rooted in the precision and service-oriented world of <strong>catering</strong>, 
-                I bring a unique perspective to <strong>Web Development</strong>. Three years ago, 
-                I traded the kitchen for the code editor, applying the same attention to detail and 
-                process-driven mindset to building digital experiences.
-            </p>
-            <p class="about-text-spacer">
-                Today, as a developer and digital creator based in <strong>Port Harcourt</strong>, 
-                I lead <strong>Karuva Tech</strong>, where I focus on high-performance workflow automation 
-                and bespoke web builds. My goal is to bridge the gap between complex backend logic 
-                and intuitive, beautiful user interfaces.
-            </p>
-        </div>
-        
-        
-        <div class="frame-corner"></div>
-    </div>
-</section>
-
-
-<section id="services" class="container vibe-fade">
-    <h3 class="section-title">Agency Services</h3>
-    <div class="services-grid">
-        <div class="service-card">
-            <div class="icon">💻</div>
-            <h4>Web Development</h4>
-            <p>Specializing in high-speed, responsive interfaces using modern standards.</p>
-        </div>
-        <div class="service-card">
-            <div class="icon">⚙️</div>
-            <h4>Workflow Automation</h4>
-            <p>Optimizing business processes through custom digital tools and integrations.</p>
-        </div>
-        <div class="service-card">
-            <div class="icon">📱</div>
-            <h4>Digital Creation</h4>
-            <p>Comprehensive digital strategy and UI design for brands and social impact projects.</p>
-        </div>
-    </div>
-</section>
-    
-
-    <section id="projects" class="container4">
-        <h3 class="section-title">Selected Projects</h3>
-        <div class="project-grid" id="project-grid">
-           
+                <!-- Design & Others -->
+                <div class="skill-category">
+                    <div class="skill-cat-header">
+                        <span class="cat-num">03</span>
+                        <h4>Design & Other</h4>
+                    </div>
+                    <ul>
+                        <li>UI Design Concepts</li>
+                        <li>Asset Optimization</li>
+                        <li>Backend Concepts</li>
+                        <li>Deployment</li>
+                    </ul>
+                </div>
+            </div>
         </div>
     </section>
 
-<section id="projects" class="container-cases">
-    <h3 class="section-title">Technical Case Studies</h3>
-    <p class="section-subtitle">A deep dive into system architecture, engineering challenges, and deployment metrics.</p>
+    <!-- About Section -->
+    <section id="about" class="section-padding dark-bg-split">
+        <div class="container reveal">
+            <div class="about-grid-wrapper">
+                <div class="about-sticky-side">
+                    <span class="section-tag">// Background</span>
+                    <h3 class="section-title">The Journey</h3>
+                </div>
+                <div class="about-content-side">
+                    <p class="lead-paragraph">
+                        With a background rooted in the precision and service-oriented world of <strong>catering</strong>, 
+                        I bring a unique perspective to <strong>Web Development</strong>. Three years ago, 
+                        I traded the kitchen for the code editor, applying the same attention to detail and 
+                        process-driven mindset to building digital experiences.
+                    </p>
+                    <p class="secondary-paragraph">
+                        Today, as a developer and digital creator based in <strong>Port Harcourt</strong>, 
+                        I lead <strong>Karuva Tech</strong>, where I focus on high-performance workflow automation 
+                        and bespoke web builds. My goal is to bridge the gap between complex backend logic 
+                        and intuitive, beautiful user interfaces.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <div class="cases-wrapper">
+    <!-- Agency Services Section -->
+    <section id="services" class="section-padding">
+        <div class="container reveal">
+            <div class="section-header-row">
+                <span class="section-tag">// Specializations</span>
+                <h3 class="section-title">Agency Services</h3>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-num">01/</div>
+                    <h4>Web Development</h4>
+                    <p>Specializing in high-speed, responsive interfaces using modern web standards.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-num">02/</div>
+                    <h4>Workflow Automation</h4>
+                    <p>Optimizing business processes through custom digital tools and integrations.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-num">03/</div>
+                    <h4>Digital Creation</h4>
+                    <p>Comprehensive digital strategy and UI design for brands and social impact projects.</p>
+                </div>
+            </div>
+        </div>
+    </section>
         
-        <div class="case-card-v2 split-card">
+    <!-- Selected Projects Section -->
+    <section id="projects" class="section-padding asset-grid-bg">
+        <div class="container reveal">
+            <div class="section-header-row">
+                <span class="section-tag">// Selected Case Work</span>
+                <h3 class="section-title">Selected Projects</h3>
+            </div>
+            <div class="project-grid" id="project-grid">
+                <!-- Dynamic projects loaded via script.js insert here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Case Studies Section -->
+    <section id="cases" class="section-padding">
+        <div class="container reveal">
+            <div class="section-header-row">
+                <span class="section-tag">// System Architecture</span>
+                <h3 class="section-title">Technical Case Studies</h3>
+                <p class="section-subtitle">A deep dive into system architecture, engineering challenges, and deployment metrics.</p>
+            </div>
+
+            <div class="cases-wrapper">
+                <!-- Case Study 1 -->
+                <div class="case-card-v2 split-card">
+                    <div class="case-visual-wrapper">
+                        <img src="images/the church got talent screenshoot.JPG" alt="Gospel Talent Live Web Interface" class="case-ui-screenshot">
+                        <div class="card-overlay-shade"></div>
+                    </div>
+                    
+                    <div class="case-info-wrapper">
+                        <div class="case-header-v2">
+                            <span class="case-tag-v2">System Architecture</span>
+                            <h4>Gospel Talent Web Platform</h4>
+                            <p>Engineered a high-performance web interface optimized for heavy media traffic and secure, concurrent live voter verification.</p>
+                        </div>
+
+                        <table class="case-matrix-table">
+                            <tr>
+                                <td><strong>Role</strong></td>
+                                <td>Front-End Engineer</td>
+                                <td><strong>Timeline</strong></td>
+                                <td>June 2026</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Stack</strong></td>
+                                <td>HTML5, CSS3, JS</td>
+                                <td><strong>Scale</strong></td>
+                                <td>Thousands of Voters</td>
+                            </tr>
+                        </table>
+
+                        <div class="case-body-v2">
+                            <div class="case-column-v2">
+                                <h5>The Engineering Hurdle</h5>
+                                <ul>
+                                    <li>Massive spikes in concurrent asset uploads causing interface lag.</li>
+                                    <li>Optimizing video rendering elements for mobile users over slower networks.</li>
+                                </ul>
+                            </div>
+                            <div class="case-column-v2">
+                                <h5>The Technical Solution</h5>
+                                <ul>
+                                    <li>Handles thousands of active concurrent votes and uploads without system strain.</li>
+                                    <li>Built async frontend upload controls with instant client validation.</li>
+                                    <li>Applied conditional lazy loading to maintain fast initial paint speeds.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Case Study 2 -->
+                <div class="case-card-v2 split-card">
+                    <div class="case-visual-wrapper">
+                        <img src="images/pilex centre screenshoot.JPG" alt="Pilex Centre Live Site Overview" class="case-ui-screenshot">
+                        <div class="card-overlay-shade"></div>
+                    </div>
+
+                    <div class="case-info-wrapper">
+                        <div class="case-header-v2">
+                            <span class="case-tag-v2">Infrastructure & DevOps</span>
+                            <h4>Pilex Centre Platform Migration</h4>
+                            <p>Coordinated and executed the complete infrastructure migration and front-end optimization for an active regional civic advocacy platform.</p>
+                        </div>
+
+                        <table class="case-matrix-table">
+                            <tr>
+                                <td><strong>Role</strong></td>
+                                <td>DevOps Engineer</td>
+                                <td><strong>Timeline</strong></td>
+                                <td>April 2026</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Stack</strong></td>
+                                <td>Core Infra, GSC</td>
+                                <td><strong>Downtime</strong></td>
+                                <td>0% System Interruption</td>
+                            </tr>
+                        </table>
+
+                        <div class="case-body-v2">
+                            <div class="case-column-v2">
+                                <h5>The Engineering Hurdle</h5>
+                                <ul>
+                                    <li>Migrating a content-heavy platform without record or metadata corruption.</li>
+                                    <li>Server latency spikes occurring during active public tracking campaigns.</li>
+                                </ul>
+                            </div>
+                            <div class="case-column-v2">
+                                <h5>The Technical Solution</h5>
+                                <ul>
+                                    <li>Migrated entire stack with absolute zero downtime deployment.</li>
+                                    <li>Executed a zero-downtime script configuration during server relocation.</li>
+                                    <li>Restructured legacy asset paths and fixed redirects via Search Console.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="section-padding gray-block">
+        <div class="container reveal">
+            <div class="section-header-row">
+                <span class="section-tag">// Proof of Execution</span>
+                <h3 class="section-title">Trusted by Impact-Driven Organizations</h3>
+                <p class="section-subtitle">Delivering high-performance digital experiences for NGOs, media platforms, and creators.</p>
+            </div>
+
+            <div class="testimonial-grid">
+                <!-- Testimonial 1 -->
+                <div class="testimonial-card">
+                    <p class="testimonial-text">
+                        "Karuva Tech completely streamlined our digital presence. The seamless site migration and layout optimization have made our civic advocacy data drastically more accessible to the public."
+                    </p>
+                    <div class="client-footer-profile">
+                        <img src="images/pilex centre logo.jpg" alt="Pilex Centre Logo" class="client-avatar">
+                        <div class="client-meta">
+                            <strong>Executive Director</strong>
+                            <span>Pilex Centre for Civic Education Initiative</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="testimonial-card">
+                    <p class="testimonial-text">
+                        "The engineering on our talent platform is exceptional. Handling media uploads, voter verification, and scaling smoothly under high traffic was a massive requirement, and Karuva Tech delivered flawlessly."
+                    </p>
+                    <div class="client-footer-profile">
+                        <img src="images/The Church Got Talent logo.jpg" alt="Gospel Talent Competition Logo" class="client-avatar">
+                        <div class="client-meta">
+                            <strong>Project Coordinator</strong>
+                            <span>The Church Got Talent Competition</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services & Pricing Section -->
+    <section id="pricing" class="section-padding">
+        <div class="container reveal">
+            <div class="section-header-row">
+                <span class="section-tag">// Transparent Rates</span>
+                <h3 class="section-title">Services & Pricing</h3>
+                <p class="section-subtitle">Tailored digital solutions built for speed, elegance, and impact.</p>
+            </div>
+
+            <div class="pricing-grid">
+                <!-- Starter -->
+                <div class="pricing-card">
+                    <div class="tier-meta">01/ Package</div>
+                    <h4>Starter Site</h4>
+                    <p class="package-desc">Perfect for startups, localized campaigns, and personal branding.</p>
+                    <div class="price">Starting at <span class="amt">₦180k – ₦250k</span></div>
+                    <ul class="features-list">
+                        <li>3-5 page business website</li>
+                        <li>Mobile responsive + contact form</li>
+                        <li>1 revision round</li>
+                        <li>Best for new businesses getting online</li>
+                    </ul>
+                </div>
+
+                <!-- Growth -->
+                <div class="pricing-card featured">
+                    <div class="tier-meta">02/ Core Tier</div>
+                    <div class="premium-badge">Most Popular</div>
+                    <h4>Growth Site</h4>
+                    <p class="package-desc">Complete multi-page web presence for scaling businesses and NGOs.</p>
+                    <div class="price">Starting at <span class="amt">₦350k – ₦450k</span></div>
+                    <ul class="features-list">
+                        <li>5-8 custom-designed pages</li>
+                        <li>Blog/gallery + social integration</li>
+                        <li>Basic SEO, 2 revision rounds</li>
+                        <li>Best for established entities</li>
+                    </ul>
+                </div>
+
+                <!-- Enterprise/Custom -->
+                <div class="pricing-card">
+                    <div class="tier-meta">03/ Custom</div>
+                    <h4>E-commerce / Booking Site</h4>
+                    <p class="package-desc">Bespoke engineering for clients, platforms, and foundations.</p>
+                    <div class="price">Starting at <span class="amt">₦550k – ₦750k</span></div>
+                    <ul class="features-list">
+                        <li>Product catalog or booking system</li>
+                        <li>Advanced Voting/Media Integrations</li>
+                        <li>Admin panel guidance</li>
+                        <li>Priority Support & Maintenance</li>
+                    </ul>
+                </div>
+
+                <!-- Care Plan -->
+                <div class="pricing-card featured">
+                    <div class="tier-meta">04/ Monthly</div>
+                    <div class="premium-badge">Retainer</div>
+                    <h4>Website Care</h4>
+                    <p class="package-desc">Continuous management to keep your platform fast, secure, and fresh.</p>
+                    <div class="price">Starting at <span class="amt">₦100k – ₦180k</span></div>
+                    <ul class="features-list">
+                        <li>Ongoing updates & small changes</li>
+                        <li>Hosting & performance logs</li>
+                        <li>For clients with an existing site</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action Banner -->
+    <div class="cta-interstitial container reveal">
+        <div class="cta-box-inner">
+            <div class="cta-left">
+                <h3>Have a unique project or need custom functionality?</h3>
+                <p>Let's collaborate on a tailored solution for your agency, foundation, or talent platform. Initial consultations are completely free.</p>
+            </div>
             
-            <div class="case-visual-wrapper">
-                <img src="images/the church got talent screenshoot.JPG" alt="Gospel Talent Live Web Interface" class="case-ui-screenshot">
-            </div>
-
-            
-            <div class="case-info-wrapper">
-                <div class="case-header-v2">
-                    <span class="case-tag-v2">System Architecture</span>
-                    <h4>Gospel Talent Web Platform</h4>
-                    <p>Engineered a high-performance web interface optimized for heavy media traffic and secure, concurrent live voter verification.</p>
-                </div>
-
-                <table class="case-matrix-table">
-                    <tr>
-                        <td><strong>Role</strong></td>
-                        <td>Front-End Engineer</td>
-                        <td><strong>Timeline</strong></td>
-                        <td>Completed (June 2026)</td>
-                    </tr>
-                    <tr>
-                        <td><strong>Stack</strong></td>
-                        <td>HTML5, CSS3, JavaScript</td>
-                        <td><strong>Target Scale</strong></td>
-                        <td>Thousands of Voters</td>
-                    </tr>
-                </table>
-
-                <div class="case-body-v2">
-                    <div class="case-column-v2">
-                        <h5>The Engineering Hurdle</h5>
-                        <ul>
-                            <li>Massive spikes in concurrent asset uploads causing interface lag.</li>
-                            <li>Optimizing video rendering elements for mobile users over slower networks.</li>
-                        </ul>
-                    </div>
-                    <div class="case-column-v2">
-                        <h5>The Technical Solution</h5>
-                        <ul>
-                            <li> built a platform that could handle thousands of people voting and uploading videos at the same time — without crashing or slowing down.</li>
-                            <li>Built async frontend upload controls with instant client validation.</li>
-                            <li>Applied conditional lazy loading to maintain fast initial paint speeds.</li>
-                        </ul>
-                    </div>
-                </div>
+            <div class="cta-buttons-group">
+                <a href="https://wa.me/2347025263116?text=Hello%20Karuva%20Tech,%20I'd%20like%20to%20discuss%20a%20web%20development%20project." 
+                   target="_blank" 
+                   rel="noopener noreferrer" 
+                   class="btn btn-action-wa">
+                   Chat on WhatsApp
+                </a>
+                
+                <a href="https://calendly.com/karuva-tech" 
+                   target="_blank" 
+                   rel="noopener noreferrer" 
+                   class="btn btn-action-cal">
+                   Book a Discovery Call
+                </a>
             </div>
         </div>
+    </div>
 
-       
-        <div class="case-card-v2 split-card">
-          
-            <div class="case-visual-wrapper">
-                <img src="images/pilex centre screenshoot.JPG" alt="Pilex Centre Live Site Overview" class="case-ui-screenshot">
-            </div>
-
-         
-            <div class="case-info-wrapper">
-                <div class="case-header-v2">
-                    <span class="case-tag-v2">Infrastructure & DevOps</span>
-                    <h4>Pilex Centre Platform Migration</h4>
-                    <p>Coordinated and executed the complete infrastructure migration and front-end optimization for an active regional civic advocacy platform.</p>
+    <!-- Contact Section -->
+    <section id="contact" class="section-padding">
+        <div class="container reveal">
+            <div class="contact-grid-split">
+                <div class="contact-panel-left">
+                    <span class="section-tag">// Communications</span>
+                    <h3 class="section-title">Get In Touch</h3>
+                    <p class="contact-lead-text">I'm currently open to new projects and collaborations.</p>
+                    
+                    <div class="social-links-wrapper">
+                        <a href="https://github.com/angelau" target="_blank" rel="noopener noreferrer" class="social-anchor-link">GitHub <span class="arrow">↗</span></a>
+                        <a href="https://www.linkedin.com/in/peace-hachikaru-amadi-70528927a/" target="_blank" rel="noopener noreferrer" class="social-anchor-link">LinkedIn <span class="arrow">↗</span></a>
+                    </div>
                 </div>
 
-                <table class="case-matrix-table">
-                    <tr>
-                        <td><strong>Role</strong></td>
-                        <td>Communications / DevOps</td>
-                        <td><strong>Timeline</strong></td>
-                        <td>Completed (April 2026)</td>
-                    </tr>
-                    <tr>
-                        <td><strong>Stack</strong></td>
-                        <td>Core Infra, Search Console</td>
-                        <td><strong>Downtime</strong></td>
-                        <td>0% Operational Downtime</td>
-                    </tr>
-                </table>
-
-                <div class="case-body-v2">
-                    <div class="case-column-v2">
-                        <h5>The Engineering Hurdle</h5>
-                        <ul>
-                            <li>Migrating a content-heavy database without records corruption.</li>
-                            <li>Server lag and latency spikes during active public campaigns.</li>
-                        </ul>
-                    </div>
-                    <div class="case-column-v2">
-                        <h5>The Technical Solution</h5>
-                        <ul>
-                            <li>moved their entire website to better infrastructure with zero downtime — visitors never noticed a thing.</li>
-                            <li>Executed a zero-downtime script configuration during server relocation.</li>
-                            <li>Restructured legacy asset paths and fixed redirects via Search Console.</li>
-                        </ul>
-                    </div>
+                <div class="contact-panel-right">
+                    <form action="https://formspree.io/f/mgodpnyn" method="POST" class="road9-form">
+                        <div class="input-group-row">
+                            <div class="form-field">
+                                <label>Your Name</label>
+                                <input type="text" name="name" placeholder="John Doe" required>
+                            </div>
+                            <div class="form-field">
+                                <label>Your Email</label>
+                                <input type="email" name="email" placeholder="john@example.com" required>
+                            </div>
+                        </div>
+                        <div class="form-field">
+                            <label>Your Message</label>
+                            <textarea name="message" rows="5" placeholder="Tell me about your system or platform requirements..." required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary form-submit">Send Message →</button>
+                    </form>
                 </div>
             </div>
         </div>
+    </section>
 
-    </div>
-</section>
-
-    
-<section id="testimonials" class="container-proof">
-    <h3 class="section-title">Trusted by Impact-Driven Organizations</h3>
-    <p class="section-subtitle">Delivering high-performance digital experiences for NGOs, media platforms, and creators.</p>
-
-    <div class="testimonial-grid">
-       
-        <div class="testimonial-card">
-            <div class="client-logo-wrapper">
-              
-                <img src="images/pilex centre logo.jpg" alt="Pilex Centre Logo" class="client-logo">
-            </div>
-            <p class="testimonial-text">
-                "Karuva Tech completely streamlined our digital presence. The seamless site migration and layout optimization have made our civic advocacy data drastically more accessible to the public."
-            </p>
-            <div class="client-info">
-                <strong>Executive Director</strong>
-                <span>Pilex Centre for Civic Education Initiative</span>
-            </div>
-        </div>
-
-
-        <div class="testimonial-card">
-            <div class="client-logo-wrapper">
-              
-                <img src="images/The Church Got Talent logo.jpg" alt="Gospel Talent Competition Logo" class="client-logo">
-            </div>
-            <p class="testimonial-text">
-                "The engineering on our talent platform is exceptional. Handling media uploads, voter verification, and scaling smoothly under high traffic was a massive requirement, and Karuva Tech delivered flawlessly."
-            </p>
-            <div class="client-info">
-                <strong>Project Coordinator</strong>
-                <span>The Church Got Talent Competition</span>
-            </div>
-        </div>
-    </div>
-</section>
-
-
-<section id="services" class="container5">
-    <h3 class="section-title">Services & Pricing</h3>
-    <p class="section-subtitle">Tailored digital solutions built for speed, elegance, and impact.</p>
-
-   <div class="pricing-grid">
-       
-        <div class="pricing-card">
-            <h4>Starter Site</h4>
-            <p class="package-desc">Perfect for startups, localized campaigns, and personal branding.</p>
-            <div class="price">Starting at <span>₦180,000 – ₦250,000</span></div>
-            <ul class="features-list">
-                <li>3-5 page business website</li>
-                <li>Mobile responsive + contact form</li>
-                <li>1 revision round</li>
-                <li>Best for new businesses getting online for the first time</li>
-            </ul>
-        </div>
-
-      
-        <div class="pricing-card featured">
-            <div class="badge">Most Popular</div>
-            <h4>Growth Site</h4>
-            <p class="package-desc">Complete multi-page web presence for scaling businesses and NGOs.</p>
-            <div class="price">Starting at <span>₦350,000 – ₦450,000</span></div>
-            <ul class="features-list">
-                <li>5-8 custom-designed pages</li>
-                <li>Blog/gallery + social integration</li>
-                <li>Basic SEO, 2 revision rounds</li>
-                <li>Best for established businesses wanting a stronger presence</li>
-            </ul>
-        </div>
-
-        
-        <div class="pricing-card enterprise-card">
-            <h4>E-commerce / Booking Site</h4>
-            <p class="package-desc">Bespoke engineering for clients, custom platforms, and foundations.</p>
-            <div class="price">Starting at <span>₦550,000 – ₦750,000</span></div>
-            <ul class="features-list">
-                <li>Product catalog or booking system</li>
-                <li>Advanced Systems Integration (Voting, Media Uploads)</li>
-                <li>Admin panel guidance</li>
-                <li>Priority Support & Code Maintenance</li>
-                <li>Payment integration</li>
-                <li>Best for businesses selling online or taking bookings</li>
-            </ul>
-        </div>
-         <div class="pricing-card featured">
-             <div class="badge">Monthly</div>
-            <h4>Monthly Website Care</h4>
-            <div class="price">Starting at <span>₦100,000 – ₦180,000</span></div>
-            <ul class="features-list">
-                <li>Ongoing updates & small changes</li>
-                <li>Hosting management</li>
-                <li>For clients with an existing site</li>
-            </ul>
-        </div>
-    </div>
-    
-    <div class="cta-banner">
-        <h3>Have a unique project or need custom functionality?</h3>
-        <p>Let's collaborate on a tailored solution for your agency, foundation, or talent platform.</p>
-        <a href="#contact" class="btn cta-btn">Let's Talk Project Details</a>
-    </div>
-</section>
-
-
-    <div class="cta-banner">
-        <h3>Have a unique project or need custom functionality?</h3>
-        <p>Let's collaborate on a tailored solution for your agency, foundation, or talent platform. Initial consultations are completely free.</p>
-        
-        
-        <div class="cta-buttons-group">
-    
-            <a href="https://wa.me/2347025263116?text=Hello%20Karuva%20Tech,%20I'd%20like%20to%20discuss%20a%20web%20development%20project." 
-               target="_blank" 
-               rel="noopener noreferrer" 
-               class="btn cta-btn whatsapp-btn">
-               <span class="btn-icon">💬</span> Chat on WhatsApp
-            </a>
-            
-      
-            <a href="https://calendly.com/karuva-tech" 
-               target="_blank" 
-               rel="noopener noreferrer" 
-               class="btn cta-btn calendly-btn">
-               <span class="btn-icon">📅</span> Book a Discovery Call
-            </a>
-        </div>
-    </div>
-
-    <section id="contact" class="container5">
-    <h3 class="section-title">Get In Touch</h3>
-    <div class="contact-wrapper">
-        <div class="contact-info">
-            <p>I'm currently open to new projects and collaborations.</p>
-            <div class="social-links">
-    <a href="https://github.com/angelau" target="_blank" rel="noopener noreferrer" class="social-btn">GitHub</a>
-    <a href="https://www.linkedin.com/in/peace-hachikaru-amadi-70528927a/" target="_blank" rel="noopener noreferrer" class="social-btn">LinkedIn</a>
-</div>
-        </div>
-
-        <form action="https://formspree.io/f/mgodpnyn" method="POST" class="contact-form">
-            <input type="text" name="name" placeholder="Your Name" required>
-            <input type="email" name="email" placeholder="Your Email" required>
-            <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
-            <button type="submit" class="btn submit-btn">Send Message</button>
-        </form>
-    </div>
-</section>
-
+    <!-- Footer -->
     <footer class="main-footer">
-    <div class="container footer-content">
-        <div class="footer-logo">
-            <span class="logo-text">Karuva Tech</span>
-            <p>High-performance digital solutions.</p>
+        <div class="container footer-content-block">
+            <div class="footer-top-row">
+                <div class="footer-brand">
+                    <span class="logo-text">Karuva Tech<span class="accent-dot">.</span></span>
+                    <p>High-performance digital solutions.</p>
+                </div>
+                <div class="footer-location">
+                    <span class="loc-indicator"></span> Based in Port Harcourt, Nigeria
+                </div>
+            </div>
+            
+            <div class="footer-bottom-row">
+                <p class="copyright-text">&copy; 2026 Karuva Tech. All rights reserved.</p>
+                <p class="engineering-sig">Built with Vanilla Architecture</p>
+            </div>
         </div>
-        
-        <div class="footer-bottom">
-            <p>&copy; 2026 Karuva Tech. All rights reserved.</p>
-            <p class="location-tag">Based in Port Harcourt</p>
-        </div>
-    </div>
-</footer>
+    </footer>
+    <!-- Persistent Floating WhatsApp Action -->
+    <a href="https://wa.me/2347025263116?text=Hello%20Karuva%20Tech,%20I'd%20like%20to%20discuss%20a%20web%20development%20project." 
+       class="whatsapp-sticky-badge" 
+       target="_blank" 
+       rel="noopener noreferrer" 
+       aria-label="Chat on WhatsApp">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="24" height="24" fill="currentColor"><path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"/></svg>
+    </a>
 
     <script src="script.js"></script>
 </body>
