@@ -1259,3 +1259,66 @@ body {
         font-size: 1.25rem;
     }
 }
+/* ==========================================================================
+   FOUNDER SECTION STYLING
+   ========================================================================== */
+.founder-section {
+    padding: 100px 24px;
+    background-color: #0c0c10; /* Keeps a unified dark layout backdrop */
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.founder-grid {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    gap: 64px;
+    align-items: flex-start;
+}
+
+.founder-header .section-title {
+    font-size: 2.5rem;
+    line-height: 1.2;
+    font-weight: 800;
+    color: #ffffff;
+}
+
+.founder-lead {
+    font-size: 1.5rem;
+    line-height: 1.4;
+    color: #f3f4f6;
+    margin-bottom: 24px;
+    font-weight: 500;
+}
+
+.founder-body p {
+    font-size: 1.05rem;
+    line-height: 1.7;
+    color: #9ca3af;
+    margin-bottom: 20px;
+}
+
+.founder-body p:last-child {
+    margin-bottom: 0;
+}
+
+/* Responsive adjustment for clean reading viewports */
+@media (max-width: 768px) {
+    .founder-section {
+        padding: 60px 20px;
+    }
+    
+    .founder-grid {
+        grid-template-columns: 1fr;
+        gap: 32px;
+    }
+    
+    .founder-header .section-title {
+        font-size: 2rem;
+    }
+    
+    .founder-lead {
+        font-size: 1.25rem;
+    }
+}
