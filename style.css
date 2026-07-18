@@ -1054,7 +1054,7 @@ body {
    MOBILE HEADER FIXES & FLOATING ACTION SYSTEM
    ========================================================================== */
 
-/* Persistent Floating WhatsApp Action Button */
+
 .whatsapp-sticky-badge {
     position: fixed;
     bottom: 30px;
@@ -1085,7 +1085,7 @@ body {
         padding: 16px 24px;
     }
 
-    /* Create Hidden Mobile Sliding Navigation Container */
+    
     .nav-links {
         position: fixed;
         top: 0;
@@ -1120,7 +1120,7 @@ body {
         padding: 14px 24px;
     }
 
-    /* Interactive Hamburger Menu Button Styles */
+   
     .menu-toggle {
         display: flex;
         flex-direction: column;
@@ -1138,7 +1138,7 @@ body {
         transition: all 0.3s ease;
     }
 
-    /* Transform Hamburger Lines into an 'X' close pattern when active */
+    
     .menu-toggle.toggle-active span:nth-child(1) {
         transform: translateY(7px) rotate(45deg);
         background-color: var(--accent);
@@ -1181,9 +1181,81 @@ body {
     }
 }
 
-/* Structural Desktop Reset safe check */
+
 @media (min-width: 769px) {
     .menu-toggle {
         display: none;
+    }
+}
+/* ==========================================================================
+   ABOUT SECTION STYLING
+   ========================================================================== */
+.about-section {
+    padding: 100px 24px;
+    background-color: #0c0c10; 
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.about-grid {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    gap: 64px;
+    align-items: flex-start;
+}
+
+.section-tagline {
+    display: block;
+    font-size: 0.85rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: var(--accent, #3b82f6); 
+    margin-bottom: 12px;
+}
+
+.about-header .section-title {
+    font-size: 2.5rem;
+    line-height: 1.2;
+    font-weight: 800;
+    color: #ffffff;
+}
+
+.about-lead {
+    font-size: 1.5rem;
+    line-height: 1.4;
+    color: #f3f4f6;
+    margin-bottom: 24px;
+    font-weight: 500;
+}
+
+.about-body p {
+    font-size: 1.05rem;
+    line-height: 1.7;
+    color: #9ca3af; 
+    margin-bottom: 20px;
+}
+
+.about-body p:last-child {
+    margin-bottom: 0;
+}
+
+/* Responsive breakpoint for mobile layout viewports */
+@media (max-width: 768px) {
+    .about-section {
+        padding: 60px 20px;
+    }
+    
+    .about-grid {
+        grid-template-columns: 1fr;
+        gap: 32px;
+    }
+    
+    .about-header .section-title {
+        font-size: 2rem;
+    }
+    
+    .about-lead {
+        font-size: 1.25rem;
     }
 }
