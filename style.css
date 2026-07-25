@@ -1104,7 +1104,7 @@ body {
         z-index: 999;
     }
 
-    /* Active Dynamic Navigation Override */
+   
     .nav-links.mobile-nav-active {
         right: 0;
     }
@@ -1157,7 +1157,7 @@ body {
         transform: translateY(7px) rotate(-45deg);
     }
 
-    /* Tighten Hero Spacing on Small Screen Sizes */
+    
     .hero {
         padding-top: 140px;
         padding-bottom: 80px;
@@ -1240,7 +1240,7 @@ body {
     margin-bottom: 0;
 }
 
-/* Responsive breakpoint for mobile layout viewports */
+
 @media (max-width: 768px) {
     .about-section {
         padding: 60px 20px;
@@ -1264,7 +1264,7 @@ body {
    ========================================================================== */
 .founder-section {
     padding: 100px 24px;
-    background-color: #0c0c10; /* Keeps a unified dark layout backdrop */
+    background-color: #0c0c10; 
     border-top: 1px solid rgba(255, 255, 255, 0.05);
 }
 
@@ -1303,7 +1303,7 @@ body {
     margin-bottom: 0;
 }
 
-/* Responsive adjustment for clean reading viewports */
+
 @media (max-width: 768px) {
     .founder-section {
         padding: 60px 20px;
@@ -1377,13 +1377,13 @@ body {
     color: #9ca3af;
 }
 
-/* Give the channel card a subtle glowing border accent */
+
 .highlight-card {
     border-color: rgba(59, 130, 246, 0.2);
 }
 
 .youtube-link {
-    color: #3b82f6; /* Accent color */
+    color: #3b82f6; 
     text-decoration: none;
     font-weight: 600;
     border-bottom: 1px dashed #3b82f6;
@@ -1391,7 +1391,7 @@ body {
 }
 
 .youtube-link:hover {
-    color: #ef4444; /* YouTube Red pop on hover! */
+    color: #ef4444;
     border-bottom-color: #ef4444;
 }
 
@@ -1498,7 +1498,7 @@ body {
     background: #3b82f6;
 }
 
-/* CTA Right Block styles */
+
 .cta-content-box .section-title {
     font-size: 2.5rem;
     font-weight: 800;
@@ -1609,4 +1609,76 @@ body {
     .btn {
         width: 100%;
     }
+}
+/* ==========================================================================
+   INTERACTIVE TOOL PORTFOLIO CARD STYLING
+   ========================================================================== */
+.highlight-tool-card {
+    position: relative;
+    border: 1px solid rgba(59, 130, 246, 0.3) !important;
+    background: linear-gradient(180deg, rgba(59, 130, 246, 0.03) 0%, rgba(12, 12, 16, 1) 100%);
+}
+
+.project-image-wrapper {
+    width: 100%;
+    overflow: hidden;
+    border-radius: 6px;
+}
+.project-img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    object-fit: contain; 
+}
+
+.tool-badge {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    background: #3b82f6;
+    color: #ffffff;
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 6px 12px;
+    border-radius: 4px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.project-features-list {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0 28px 0;
+}
+
+.project-features-list li {
+    font-size: 0.95rem;
+    color: #9ca3af;
+    margin-bottom: 10px;
+    position: relative;
+    padding-left: 20px;
+}
+
+.project-features-list li::before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: #3b82f6;
+    font-weight: bold;
+}
+
+.btn-sm {
+    padding: 10px 20px;
+    font-size: 0.88rem;
+}
+
+.arrow-icon {
+    display: inline-block;
+    transition: transform 0.2s ease;
+}
+
+.btn-sm:hover .arrow-icon {
+    transform: translateX(4px);
 }

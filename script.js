@@ -17,10 +17,10 @@ const projects = [
         status: "Live & Completed"
     },
     {
-        title: "Karuva Tech Agency Site",
-        description: "The professional digital hub for my agency, showcasing bespoke front-end builds with smooth CSS animations and 100/100 performance scores.",
-        tech: "Vanilla JS, CSS Keyframes, WebP",
-        link: "#",
+        title: "Free Website Health Check Tool",
+        description: "A tool I built that scans any website and tells business owners what's broken in plain English.",
+        tech: "Node.js, Express, Puppeteer",
+        link: "https://audit.karuvatech.com.ng",
         status: "Active"
     }
 ];
