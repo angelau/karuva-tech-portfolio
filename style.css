@@ -1823,3 +1823,68 @@ body {
 .case-info-wrapper .project-link {
     margin-top: 8px;
 }
+
+
+/* Case card visual placeholder — used when no screenshot is available,
+   shows a language-tag pattern instead of a UI grab */
+.case-visual-placeholder {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    background: linear-gradient(160deg, var(--bg-surface) 0%, var(--bg-main) 100%);
+}
+
+.case-visual-placeholder .placeholder-domain {
+    font-family: var(--font-display);
+    font-size: 1.3rem;
+    color: var(--text-primary);
+}
+
+.case-visual-placeholder .placeholder-langs {
+    display: flex;
+    gap: 8px;
+}
+
+.case-visual-placeholder .placeholder-langs span {
+    font-size: 0.72rem;
+    font-weight: 600;
+    color: var(--accent-teal);
+    border: 1px solid var(--border-color);
+    padding: 4px 8px;
+}
+
+/* Live-site link used on case pages that link out instead of embedding a screenshot */
+.case-live-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 0.95rem;
+    color: var(--accent-teal);
+    text-decoration: none;
+    border-bottom: 1px dashed var(--accent-teal);
+    margin: 24px 0 48px;
+}
+
+.case-live-link:hover {
+    color: var(--accent);
+    border-bottom-color: var(--accent);
+}
+
+.case-outcome-note {
+    font-family: var(--font-sans);
+    font-size: 0.95rem;
+    line-height: 1.6;
+    color: var(--text-secondary);
+    background: var(--bg-surface);
+    border-left: 2px solid var(--accent-teal);
+    padding: 18px 22px;
+    margin: 12px 0 60px;
+}
+
+.case-outcome-note strong {
+    color: var(--text-primary);
+}
