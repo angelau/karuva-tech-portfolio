@@ -6,14 +6,18 @@ const projects = [
         title: "NGO Impact Platform",
         description: "A custom platform optimized for low-bandwidth environments. Focused on accessibility and high performance to ensure community outreach remains effective across all devices.",
         tech: "HTML5, CSS Grid, JavaScript",
-        link: "https://pilexcentre.org",
+        link: "projects/pilex-centre.html",
+        linkText: "View Case Study",
+        external: false,
         status: "Live & Completed"
     },
     {
         title: "Talent Competition Hub",
         description: "A comprehensive digital portal for a large-scale talent event. Features include real-time contestant tracking and automated scoring workflows.",
         tech: "Modern Web Stack, Workflow Automation",
-        link: "https://thechurchgottalent.com.ng", 
+        link: "projects/gospel-talent.html",
+        linkText: "View Case Study",
+        external: false,
         status: "Live & Completed"
     },
     {
@@ -21,6 +25,8 @@ const projects = [
         description: "A tool I built that scans any website and tells business owners what's broken in plain English.",
         tech: "Node.js, Express, Puppeteer",
         link: "https://audit.karuvatech.com.ng",
+        linkText: "Visit Live Site",
+        external: true,
         status: "Active"
     }
 ];
@@ -32,7 +38,7 @@ const projectGrid = document.getElementById('project-grid');
 
 function renderProjects() {
     if (!projectGrid) return;
-    
+
     projectGrid.innerHTML = projects.map(project => `
         <div class="project-card">
             <span class="status-tag">${project.status}</span>
@@ -41,8 +47,8 @@ function renderProjects() {
             <div class="tech-stack-list">
                 ${project.tech}
             </div>
-            <a href="${project.link}" target="_blank" rel="noopener noreferrer" class="project-link">
-                Visit Live Site →
+            <a href="${project.link}" ${project.external ? 'target="_blank" rel="noopener noreferrer"' : ''} class="project-link">
+                ${project.linkText} &rarr;
             </a>
         </div>
     `).join('');
