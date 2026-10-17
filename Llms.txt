@@ -1,0 +1,8 @@
+# Karuva Tech
+> Web development and digital solutions studio in Port Harcourt, Rivers State, Nigeria, led by Hachikaru Peace. Builds fast custom websites and workflow automation for small businesses, NGOs and organizations.
+
+- [Home](https://www.karuvatech.com.ng/): services, pricing, FAQ and contact
+- [Free website health check](https://audit.karuvatech.com.ng): tests mobile responsiveness, speed and local SEO
+- [Gospel Talent case study](https://www.karuvatech.com.ng/projects/gospel-talent.html)
+- [Pilex Centre case study](https://www.karuvatech.com.ng/projects/pilex-centre.html)
+- [IELMON case study](https://www.karuvatech.com.ng/projects/ielmon.html)
