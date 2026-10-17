@@ -119,3 +119,27 @@ if (menuTrigger && navContainer) {
         }
     });
 }
+/* ===== HOMEPAGE INTERACTIONS (only runs on body.home). Paste at the very bottom of script.js ===== */
+(function(){
+if(!document.body||!document.body.classList.contains('home'))return;
+const $=s=>document.querySelector(s),$$=s=>[...document.querySelectorAll(s)];
+document.documentElement.classList.add('js');
+const bar=document.createElement('div');bar.id='bar';document.body.prepend(bar);
+const nav=$('nav'),links=$('.links'),hero=$('.hero');
+const onScroll=()=>{nav.classList.toggle('s',scrollY>30);bar.style.width=scrollY/(document.documentElement.scrollHeight-innerHeight)*100+'%'};
+addEventListener('scroll',onScroll,{passive:true});onScroll();
+$('#mt').onclick=()=>links.classList.toggle('open');links.onclick=()=>links.classList.remove('open');
+hero.addEventListener('mousemove',e=>{const r=hero.getBoundingClientRect();hero.style.setProperty('--mx',e.clientX-r.left+'px');hero.style.setProperty('--my',e.clientY-r.top+'px')});
+const io=new IntersectionObserver(es=>es.forEach(x=>{if(x.isIntersecting){x.target.classList.add('in');io.unobserve(x.target);const n=x.target.querySelector('[data-n]');if(n)count(n)}}),{threshold:.15});
+$$('h2,.sub,.rows>div,.two>div,.pc,details,.stats>div,.tool .two>div,.cg>*').forEach((el,i)=>{el.classList.add('rv');el.style.transitionDelay=(i%4)*90+'ms';io.observe(el)});
+function count(n){const t=+n.dataset.n,s=n.dataset.s||'',st=performance.now();(function f(now){const p=Math.min((now-st)/1400,1);n.textContent=Math.round(t*(1-Math.pow(1-p,3)))+(p>=1?s:'');if(p<1)requestAnimationFrame(f)})(st)}
+const trk=$('#trk'),pi=$('#pi'),step=()=>trk.firstElementChild.offsetWidth+26;
+$('#nx').onclick=()=>trk.scrollBy({left:step(),behavior:'smooth'});
+$('#pv').onclick=()=>trk.scrollBy({left:-step(),behavior:'smooth'});
+trk.addEventListener('scroll',()=>{const m=trk.scrollWidth-trk.clientWidth,n=trk.children.length;pi.style.width=(100/n+(100-100/n)*(m?trk.scrollLeft/m:0))+'%'},{passive:true});
+const sl=$$('.tsl figure'),dt=document.createElement('div');dt.className='dots';$('.tsl').after(dt);let k=0,tm;
+sl.forEach((_,i)=>{const d=document.createElement('span');d.onclick=()=>{go(i);auto()};dt.append(d)});
+function go(i){k=i;sl.forEach((f,j)=>f.classList.toggle('on',j==i));[...dt.children].forEach((d,j)=>d.classList.toggle('on',j==i))}
+function auto(){clearInterval(tm);tm=setInterval(()=>go((k+1)%sl.length),6500)}
+go(0);auto();
+})();
